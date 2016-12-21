@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rulename">
+        <item>wulu</item>
+        <item>suku</item>
+        <item>taling</item>
+        <item>pepet</item>
+        <item>taling tarung</item>
+        <item>layar</item>
+        <item>wignyan</item>
+        <item>cecek</item>
+        <item>pangkon</item>
+        <item>pengkal</item>
+        <item>cakra</item>
+        <item>cakra keret</item>
+        <item>adeg-adeg</item>
+        <item>pada lungsi</item>
+        <item>pada lingsa</item>
+        <item>pada pangkat</item>
+        <item>Aturan khusus \'re\'</item>
+        <item>Aturan khusus \'le\'</item>
+    </string-array>
+    <string-array name="ruleaksara">
+        <item>¤i</item>
+        <item>¤u</item>
+        <item>[¤</item>
+        <item>¤e</item>
+        <item>[¤o</item>
+        <item>¤/</item>
+        <item>¤h</item>
+        <item>¤=</item>
+        <item>¤\\</item>
+        <item>¤-</item>
+        <item>¤]</item>
+        <item>¤}</item>
+        <item>\?¤</item>
+        <item>¤.</item>
+        <item>¤,</item>
+        <item>;¤¤;</item>
+        <item>x</item>
+        <item>X</item>
+    </string-array>
+    <string-array name="ruleexplanation">
+        <item>Aturan untuk mengubah huruf menjadi bervokal \'i\'</item>
+        <item>Aturan untuk mengubah huruf menjadi bervokal \'u\'</item>
+        <item>Aturan untuk mengubah huruf menjadi bervokal \'e\' (seperti dalam kata sedan)</item>
+        <item>Aturan untuk mengubah huruf menjadi bervokal \'e\' (seperti dalam kata cepat)</item>
+        <item>Aturan untuk mengubah huruf menjadi bervokal \'o\'</item>
+        <item>Aturan untuk menuliskan \'r\' pada akhir kata</item>
+        <item>Aturan untuk menuliskan \'h\' pada akhir kata</item>
+        <item>Aturan untuk menuliskan \'ng\' pada akhir kata</item>
+        <item>Aturan untuk mematikan huruf pada akhir kata</item>
+        <item>Aturan untuk menyisipkan \'ya\' pada suatu huruf</item>
+        <item>Aturan untuk menyisipkan \'ra\' pada suatu huruf</item>
+        <item>Aturan untuk menyisipkan \'re\' pada suatu huruf</item>
+        <item>Penanda awal kalimat</item>
+        <item>Penanda akhir kalimat</item>
+        <item>Penanda tanda baca koma</item>
+        <item>Penanda pemisah antara angka dan tulisan</item>
+        <item>Aturan khusus untuk menulis \'re\' (seperti pada rendhang)</item>
+        <item>Aturan khusus untuk menulis \'le\' (seperti pada legawa)</item>
+    </string-array>
+    <string-array name="ruleexample">
+        <item>sipit\\</item>
+        <item>tuku</item>
+        <item>s[r</item>
+        <item>ceq</item>
+        <item>[ko[ko</item>
+        <item>ly/</item>
+        <item>pejh</item>
+        <item>tli=</item>
+        <item>c=kem\\</item>
+        <item>muf-</item>
+        <item>ck]</item>
+        <item>p}nTh</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>¤;91;¤</item>
+        <item>xnD=</item>
+        <item>Xgw</item>
+    </string-array>
+    <string-array name="ruleexampletext">
+        <item>(sipit)</item>
+        <item>(tuku)</item>
+        <item>(sare)</item>
+        <item>(cetha)</item>
+        <item>(koko)</item>
+        <item>(layar)</item>
+        <item>(pejah)</item>
+        <item>(taling)</item>
+        <item>(cangkem)</item>
+        <item>(mudya)</item>
+        <item>(cakra)</item>
+        <item>(prentah)</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>(.. 91 ..)</item>
+        <item>(rendhang)</item>
+        <item>(legawa)</item>
+    </string-array>
+
+</resources>

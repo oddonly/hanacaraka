@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chooselevel"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:gravity="center_horizontal" 
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/levelone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/grade_a"
+        android:background="@drawable/custom_button"
+        android:text="@string/begin"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/leveltwo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/grade_b"
+        android:background="@drawable/custom_button"
+        android:text="@string/intermediate"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/levelthree"
+        android:drawableLeft="@drawable/grade_c"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/hard"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>

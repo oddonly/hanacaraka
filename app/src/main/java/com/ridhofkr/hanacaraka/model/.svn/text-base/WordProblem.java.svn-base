@@ -1,0 +1,13 @@
+package com.ppl.hanacaraka.model;
+
+public class WordProblem extends Problem {
+	public String word;
+	public String answer;
+
+	public WordProblem(int level, String problem, String answer, int category) {
+		this.word = problem;
+		this.answer = answer;
+		this.level = level;
+		this.category = category;
+	}
+}

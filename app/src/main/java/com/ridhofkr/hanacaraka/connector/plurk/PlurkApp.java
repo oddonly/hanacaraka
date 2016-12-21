@@ -1,0 +1,258 @@
+package com.ridhofkr.hanacaraka.connector.plurk;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLDecoder;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
+import oauth.signpost.commonshttp.CommonsHttpOAuthProvider;
+import twitter4j.http.AccessToken;
+import twitter4j.internal.org.json.JSONObject;
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.Window;
+import android.widget.Toast;
+
+public class PlurkApp {
+	private PlurkSession mSession;
+	private AccessToken mAccessToken;
+	private CommonsHttpOAuthConsumer mHttpOauthConsumer;
+	private CommonsHttpOAuthProvider mHttpOauthprovider;
+	private String mConsumerKey;
+	private String mSecretKey;
+	private ProgressDialog mProgressDlg;
+	private PDialogListener mListener;
+	private Activity context;
+
+	public static final String CALLBACK_URL = "plurkapp://connect";
+	public static final String PLURK_ACCESS_TOKEN_URL = "http://www.plurk.com/OAuth/access_token";
+	public static final String PLURK_AUTHORZE_URL = "http://www.plurk.com/m/authorize";
+	public static final String PLURK_REQUEST_URL = "http://www.plurk.com/OAuth/request_token";
+
+	public PlurkApp(Activity context, String consumerKey, String secretKey) {
+		this.context = context;
+		mSession = new PlurkSession(context);
+		mProgressDlg = new ProgressDialog(context);
+		mProgressDlg.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		mConsumerKey = consumerKey;
+		mSecretKey = secretKey;
+		mHttpOauthConsumer = new CommonsHttpOAuthConsumer(mConsumerKey,
+				mSecretKey);
+		mHttpOauthprovider = new CommonsHttpOAuthProvider(PLURK_REQUEST_URL,
+				PLURK_ACCESS_TOKEN_URL, PLURK_AUTHORZE_URL);
+		mAccessToken = mSession.getAccessToken();
+		configureToken();
+	}
+
+	public void setListener(PDialogListener listener) {
+		mListener = listener;
+	}
+
+	private void configureToken() {
+		if (mAccessToken != null) {
+			mHttpOauthConsumer.setTokenWithSecret(mAccessToken.getToken(),
+					mAccessToken.getTokenSecret());
+		}
+	}
+
+	public boolean hasAccessToken() {
+		return (mAccessToken == null) ? false : true;
+	}
+
+	public void resetAccessToken() {
+		if (mAccessToken != null) {
+			mSession.resetAccessToken();
+			mAccessToken = null;
+		}
+	}
+
+	public String getUsername() {
+		return mSession.getUsername();
+	}
+
+	public void updateStatus(String status) {
+		mProgressDlg.setMessage("Share pencapaian ke Plurk");
+		mProgressDlg.show();
+		final String update = status;
+		new Thread() {
+			public void run() {
+				try {
+					URI url = new URI("http", "www.plurk.com",
+							"/APP/Timeline/plurkAdd", "content=" + update
+									+ "&qualifier=shares", null);
+					HttpGet request = new HttpGet(url);
+					mHttpOauthConsumer.sign(request);
+					HttpClient client = new DefaultHttpClient();
+					HttpResponse response = client.execute(request);
+					int status = response.getStatusLine().getStatusCode();
+					if (status != 200) {
+						throw new Exception("Response server failed");
+					}
+					mProgressDlg.dismiss();
+					handler.sendMessage(handler.obtainMessage(3, 1, 0));
+				} catch (Exception e) {
+					e.printStackTrace();
+					Log.e("Plurk", e.getMessage());
+					mProgressDlg.dismiss();
+					handler.sendMessage(handler.obtainMessage(3, 0, 0));
+				}
+			}
+		}.start();
+	}
+
+	public String retrieveUsername() {
+		String username = "";
+		try {
+			URI url = new URI("http", "www.plurk.com", "/APP/Users/currUser",
+					null, null);
+			HttpGet request = new HttpGet(url);
+			mHttpOauthConsumer.sign(request);
+			HttpClient client = new DefaultHttpClient();
+			HttpResponse response = client.execute(request);
+			BufferedReader r = new BufferedReader(new InputStreamReader(
+					response.getEntity().getContent(), "UTF-8"));
+			JSONObject obj = new JSONObject(r.readLine());
+			username = obj.getString("nick_name");
+			Log.e("Plurk", username);
+		} catch (Exception e) {
+			e.printStackTrace();
+			Log.e("Plurk", "Failed to retrieve username");
+		}
+		return username;
+	}
+
+	public void authorize() {
+		mProgressDlg.setMessage("Initializing...");
+		mProgressDlg.show();
+		new Thread() {
+			public void run() {
+				String authUrl = "";
+				int what = 1;
+				try {
+					authUrl = mHttpOauthprovider.retrieveRequestToken(
+							mHttpOauthConsumer, CALLBACK_URL);
+					what = 0;
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				handler.sendMessage(handler.obtainMessage(what, 1, 0, authUrl));
+			}
+		}.start();
+	}
+
+	private void showLoginDialog(String url) {
+		final PDialogListener listener = new PDialogListener() {
+
+			public void onError(String value) {
+				mListener.onError("Failed opening authorization page");
+			}
+
+			public void onComplete(String value) {
+				processToken(value);
+			}
+		};
+		Log.e("url", url);
+		new PlurkDialog(context, url, listener).show();
+	}
+
+	public void processToken(String url) {
+		mProgressDlg.setMessage("Finalizing...");
+		mProgressDlg.show();
+		final String verifier = getVerifier(url);
+		new Thread() {
+			public void run() {
+				int what = 1;
+				try {
+					mHttpOauthprovider.retrieveAccessToken(mHttpOauthConsumer,
+							verifier);
+					mAccessToken = new AccessToken(
+							mHttpOauthConsumer.getToken(),
+							mHttpOauthConsumer.getTokenSecret());
+					configureToken();
+					String username = retrieveUsername();
+					if (username.equals("")) {
+						throw new Exception("Failed to retrieve username");
+					} else {
+						mSession.storeAccessToken(mAccessToken, username);
+					}
+					what = 0;
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				handler.sendMessage(handler.obtainMessage(what, 2, 0));
+			}
+		}.start();
+	}
+
+	private String getVerifier(String callbackUrl) {
+		String verifier = "";
+
+		try {
+			callbackUrl = callbackUrl.replace("plurkapp", "http");
+
+			URL url = new URL(callbackUrl);
+			String query = url.getQuery();
+
+			String array[] = query.split("&");
+
+			for (String parameter : array) {
+				String v[] = parameter.split("=");
+
+				if (URLDecoder.decode(v[0]).equals(
+						oauth.signpost.OAuth.OAUTH_VERIFIER)) {
+					verifier = URLDecoder.decode(v[1]);
+					break;
+				}
+			}
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		return verifier;
+	}
+
+	private Handler handler = new Handler() {
+		public void handleMessage(Message msg) {
+			mProgressDlg.dismiss();
+			if (msg.what == 1) {
+				if (msg.arg1 == 1) {
+					mListener.onError("Error getting request token");
+				} else {
+					mListener.onError("Error getting access token");
+				}
+			} else if (msg.what == 3) {
+				if (msg.arg1 == 1) {
+					Toast.makeText(context,
+							"Pencapaian berhasil dipublikasikan!",
+							Toast.LENGTH_LONG).show();
+				} else {
+					Toast.makeText(context, "Pencapaian gagal dipublikasikan!",
+							Toast.LENGTH_LONG).show();
+				}
+			} else {
+				if (msg.arg1 == 1) {
+					showLoginDialog((String) msg.obj);
+				} else {
+					mListener.onComplete("");
+				}
+			}
+		}
+	};
+
+	public interface PDialogListener {
+		public void onComplete(String value);
+
+		public void onError(String value);
+	}
+}

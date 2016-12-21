@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/evaluation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headerevaluation"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/levelevaluation"
+        layout="@layout/evaluation_level" />
+
+    <include
+        android:id="@+id/evalreadletter"
+        layout="@layout/exercise_readletter" />
+
+    <include
+        android:id="@+id/evalwriteletter"
+        layout="@layout/exercise_writeletter" />
+
+    <include
+        android:id="@+id/evalreadword"
+        layout="@layout/exercise_readword" />
+    
+    <include 
+        android:id="@+id/evalsayword" 
+        layout="@layout/exercise_sayword" />
+
+</LinearLayout>

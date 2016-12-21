@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="category_letterproblem">
+        <!-- aksara dasar -->
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<!-- aksara swara -->
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<!-- aksara rekan -->
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<!-- aksara murda -->
+		<item>4</item>
+		<item>4</item>
+		<item>4</item>
+		<item>4</item>
+		<item>4</item>
+		<item>4</item>
+		<item>4</item>
+		<item>4</item>
+		<!-- aksara wilangan -->
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+		<item>5</item>
+    </integer-array>
+	<integer-array name="level_letterproblem">
+	    <!-- aksara dasar -->
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<!-- aksara swara -->
+		<item>1</item>
+		<item>2</item>
+		<item>2</item>
+		<item>3</item>
+		<item>3</item>
+		<!-- aksara rekan -->
+		<item>1</item>
+		<item>1</item>
+		<item>2</item>
+		<item>2</item>
+		<item>3</item>
+		<!-- aksara murda -->
+		<item>1</item>
+		<item>1</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<!-- aksara wilangan -->
+		<item>1</item>
+		<item>1</item>
+		<item>1</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+		<item>3</item>
+	</integer-array>
+	<string-array name="letter_letterproblem">
+		<!-- aksara dasar -->
+        <item>a</item>
+        <item>n</item>
+        <item>c</item>
+        <item>r</item>
+        <item>k</item>
+        <item>f</item>
+        <item>t</item>
+        <item>s</item>
+        <item>w</item>
+        <item>l</item>
+        <item>p</item>
+        <item>d</item>
+        <item>j</item>
+        <item>y</item>
+        <item>v</item>
+        <item>m</item>
+        <item>g</item>
+        <item>b</item>
+        <item>q</item>
+        <item>z</item>
+        <!-- aksara swara -->
+        <item>A</item>
+        <item>I</item>
+        <item>U</item>
+        <item>E</item>
+        <item>O</item>
+        <!-- aksara rekan -->
+        <item>k+</item>
+        <item>p+</item>
+        <item>f+</item>
+        <item>g+</item>
+        <item>j+</item>
+        <!-- aksara murda -->
+        <item>!</item>
+        <item>\@</item>
+        <item>#</item>
+        <item>$</item>
+        <item>%</item>
+        <item>^</item>
+        <item>&amp;</item>
+        <item>*</item>
+        <!-- aksara wilangan -->
+        <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>0</item>
+	</string-array>
+	<string-array name="answer_letterproblem">
+		<!-- aksara dasar -->
+        <item>Ha</item>
+        <item>Na</item>
+        <item>Ca</item>
+        <item>Ra</item>
+        <item>Ka</item>
+        <item>Da</item>
+        <item>Ta</item>
+        <item>Sa</item>
+        <item>Wa</item>
+        <item>La</item>
+        <item>Pa</item>
+        <item>Dha</item>
+        <item>Ja</item>
+        <item>Ya</item>
+        <item>Nya</item>
+        <item>Ma</item>
+        <item>Ga</item>
+        <item>Ba</item>
+        <item>Tha</item>
+        <item>Nga</item>
+        <!-- aksara swara -->
+        <item>A</item>
+        <item>I</item>
+        <item>U</item>
+        <item>E</item>
+        <item>O</item>
+        <!-- aksara rekan -->
+        <item>kha</item>
+        <item>fa/va</item>
+        <item>dza</item>
+        <item>gha</item>
+        <item>za</item>
+        <!-- aksara murda -->
+        <item>Na</item>
+        <item>Ka</item>
+        <item>Ta</item>
+        <item>Sa</item>
+        <item>Pa</item>
+        <item>Nya</item>
+        <item>Ga</item>
+        <item>Ba</item>
+        <!-- aksara wilangan -->
+        <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>0</item>
+	</string-array>
+
+</resources>

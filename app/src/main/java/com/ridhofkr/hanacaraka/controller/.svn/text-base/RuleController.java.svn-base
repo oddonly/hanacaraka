@@ -1,0 +1,49 @@
+package com.ppl.hanacaraka.controller;
+
+import java.util.ArrayList;
+
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.ppl.hanacaraka.HanacarakaActivity;
+import com.ppl.hanacaraka.R;
+import com.ppl.hanacaraka.model.Rules;
+
+public class RuleController {
+	public ArrayList<Rules> rules;
+
+	public RuleController() {
+
+	}
+
+	public void makeListOfRule() {
+		rules = HanacarakaActivity.DAO.loadRules();
+	}
+	
+	public void ruleImageRendering(View view, Rules rule) {
+		TextView name = (TextView) view.findViewById(R.id.rulename);
+		TextView explanation = (TextView) view
+				.findViewById(R.id.ruleexplanation);
+		TextView example = (TextView) view.findViewById(R.id.ruleexample);
+		TextView exampleText = (TextView) view
+				.findViewById(R.id.ruleexampletext);
+		TextView letter = (TextView) view.findViewById(R.id.ruleletter);
+		LinearLayout sample = (LinearLayout) view.findViewById(R.id.ruleuseexp);
+		TextView text = (TextView) view.findViewById(R.id.ruleusesample);
+		if (rule.example.equals("")) {
+			sample.setVisibility(View.GONE);
+			text.setVisibility(View.GONE);
+		} else {
+			sample.setVisibility(View.VISIBLE);
+			text.setVisibility(View.VISIBLE);
+			example.setText(rule.example);
+			example.setTypeface(HanacarakaActivity.HANACARAKA_FONT);
+			exampleText.setText(rule.exampleText);
+		}
+		name.setText(rule.name);
+		explanation.setText(rule.explanation);
+		letter.setText(rule.letter);
+		letter.setTypeface(HanacarakaActivity.HANACARAKA_FONT);
+	}
+}

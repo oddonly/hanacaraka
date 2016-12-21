@@ -1,0 +1,106 @@
+8
+
+dir
+136
+http://hanacaraka.googlecode.com/svn/fblibrary
+http://hanacaraka.googlecode.com/svn
+
+
+
+2012-05-19T07:09:05.394571Z
+136
+Riyan.n68@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+04f757ab-f9c6-b02b-2494-84101bc8059e
+
+.classpath
+file
+
+
+
+
+2012-05-19T04:27:29.000000Z
+190f666332cc550efd902a01024e2762
+2012-04-03T03:51:31.640986Z
+40
+riyan.n68@gmail.com
+
+project.properties
+file
+
+
+
+
+2012-05-19T04:27:29.000000Z
+5062d362992ca3162ad630ac9ab48a32
+2012-04-03T03:51:31.640986Z
+40
+riyan.n68@gmail.com
+
+proguard.cfg
+file
+
+
+
+
+2012-05-19T04:27:29.000000Z
+03ea0fdd0a4aabc43b80216d64438921
+2012-04-03T03:51:31.640986Z
+40
+riyan.n68@gmail.com
+
+assets
+dir
+
+.project
+file
+
+
+
+
+2012-05-19T04:27:30.000000Z
+e043c1ac4a0fcd065366fcc2692ed42f
+2012-04-03T03:51:31.640986Z
+40
+riyan.n68@gmail.com
+
+AndroidManifest.xml
+file
+
+
+
+
+2012-05-19T06:56:29.000000Z
+a56f2d2892f3970406cbf716161dbab8
+2012-04-03T03:51:31.640986Z
+40
+riyan.n68@gmail.com
+
+src
+dir
+
+bin
+dir
+
+gen
+dir
+
+res
+dir
+
+.settings
+dir
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/136/fblibrary
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/40/fblibrary/.classpath
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/40/fblibrary/project.properties
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/40/fblibrary/proguard.cfg
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/40/fblibrary/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/40/fblibrary/AndroidManifest.xml
+END

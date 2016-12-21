@@ -1,0 +1,47 @@
+8
+
+dir
+136
+http://hanacaraka.googlecode.com/svn/fblibrary/bin
+http://hanacaraka.googlecode.com/svn
+
+
+
+2012-05-15T13:27:02.437325Z
+121
+riyan.n68@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+04f757ab-f9c6-b02b-2494-84101bc8059e
+
+com_facebook_android.jar
+file
+
+
+
+
+2012-05-19T04:27:24.000000Z
+3603749943b4b5d42b440dda91cb81ce
+2012-05-15T13:27:02.437325Z
+121
+riyan.n68@gmail.com
+has-props
+
+res
+dir
+
+classes
+dir
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ridhofkr.hanacaraka"
+    android:versionCode="7"
+    android:versionName="1.3.3" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".HanacarakaActivity"
+            android:configChanges="orientation|keyboard"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EvaluationActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExerciseActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LetterCardActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListingLettersActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListingRulesActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RuleCardActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SharingActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer-array name="category">
+	    <!-- aksara dasar -->
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <item>1</item>
+	    <!-- aksara swara -->
+	    <item>2</item>
+	    <item>2</item>
+	    <item>2</item>
+	    <item>2</item>
+	    <item>2</item>
+	    <!-- aksara rekan -->
+	    <item>3</item>
+	    <item>3</item>
+	    <item>3</item>
+	    <item>3</item>
+	    <item>3</item>
+	    <!-- aksara murda -->
+	    <item>4</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <!-- aksara wilangan -->
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	    <item>5</item>
+	</integer-array>
+    <string-array name="text">
+        <!-- aksara dasar -->
+        <item>Ha</item>
+        <item>Na</item>
+        <item>Ca</item>
+        <item>Ra</item>
+        <item>Ka</item>
+        <item>Da</item>
+        <item>Ta</item>
+        <item>Sa</item>
+        <item>Wa</item>
+        <item>La</item>
+        <item>Pa</item>
+        <item>Dha</item>
+        <item>Ja</item>
+        <item>Ya</item>
+        <item>Nya</item>
+        <item>Ma</item>
+        <item>Ga</item>
+        <item>Ba</item>
+        <item>Tha</item>
+        <item>Nga</item>
+        <!-- aksara swara -->
+        <item>A</item>
+        <item>I</item>
+        <item>U</item>
+        <item>E</item>
+        <item>O</item>
+        <!-- aksara rekan -->
+        <item>kha</item>
+        <item>fa/va</item>
+        <item>dza</item>
+        <item>gha</item>
+        <item>za</item>
+        <!-- aksara murda -->
+        <item>Na</item>
+        <item>Ka</item>
+        <item>Ta</item>
+        <item>Sa</item>
+        <item>Pa</item>
+        <item>Nya</item>
+        <item>Ga</item>
+        <item>Ba</item>
+        <!-- aksara wilangan -->
+        <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>0</item>
+    </string-array>
+    <string-array name="aksara">
+        <!-- aksara dasar -->
+        <item>a</item>
+        <item>n</item>
+        <item>c</item>
+        <item>r</item>
+        <item>k</item>
+        <item>f</item>
+        <item>t</item>
+        <item>s</item>
+        <item>w</item>
+        <item>l</item>
+        <item>p</item>
+        <item>d</item>
+        <item>j</item>
+        <item>y</item>
+        <item>v</item>
+        <item>m</item>
+        <item>g</item>
+        <item>b</item>
+        <item>q</item>
+        <item>z</item>
+        <!-- aksara swara -->
+        <item>A</item>
+        <item>I</item>
+        <item>U</item>
+        <item>E</item>
+        <item>O</item>
+        <!-- aksara rekan -->
+        <item>k+</item>
+        <item>p+</item>
+        <item>f+</item>
+        <item>g+</item>
+        <item>j+</item>
+        <!-- aksara murda -->
+        <item>!</item>
+        <item>\@</item>
+        <item>#</item>
+        <item>$</item>
+        <item>%</item>
+        <item>^</item>
+        <item>&amp;</item>
+        <item>*</item>
+        <!-- aksara wilangan -->
+        <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>0</item>
+    </string-array>
+    <string-array name="sandhangan">
+        <item>H</item>
+        <item>N</item>
+        <item>C</item>
+        <item>R</item>
+        <item>K</item>
+        <item>F</item>
+        <item>T</item>
+        <item>S</item>
+        <item>W</item>
+        <item>L</item>
+        <item>P</item>
+        <item>D</item>
+        <item>J</item>
+        <item>Y</item>
+        <item>V</item>
+        <item>M</item>
+        <item>G</item>
+        <item>B</item>
+        <item>Q</item>
+        <item>Z</item>
+        <!-- aksara swara (tidak ada pasangan) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <!-- aksara rekan (tidak ada pasangan) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <!-- aksara murda -->
+        <item>®</item>
+        <item>¯</item>
+        <item>±</item>
+        <item>°</item>
+        <item>²</item>
+        <item>³</item>
+        <item>´</item>
+        <item>µ</item>
+        <!-- aksara wilangan (tidak ada pasangan) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="textsandhangan">
+        <!-- aksara dasar -->
+        <item>(a)</item>
+        <item>(n)</item>
+        <item>(c)</item>
+        <item>(r)</item>
+        <item>(k)</item>
+        <item>(d)</item>
+        <item>(t)</item>
+        <item>(s)</item>
+        <item>(w)</item>
+        <item>(l)</item>
+        <item>(p)</item>
+        <item>(dh)</item>
+        <item>(j)</item>
+        <item>(y)</item>
+        <item>(ny)</item>
+        <item>(m)</item>
+        <item>(g)</item>
+        <item>(b)</item>
+        <item>(th)</item>
+        <item>(ng)</item>
+        <!-- aksara swara (tidak ada pasangan) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <!-- aksara rekan (tidak ada pasangan) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <!-- aksara murda -->
+        <item>(N)</item>
+        <item>(K)</item>
+        <item>(T)</item>
+        <item>(S)</item>
+        <item>(P)</item>
+        <item>(Ny)</item>
+        <item>(G)</item>
+        <item>(B)</item>
+        <!-- aksara wilangan (tidak ada pasangan) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="exampleaksara">
+        <!-- aksara dasar -->
+        <item>ma</item>
+        <item>nzi=</item>
+        <item>zc</item>
+        <item>rj</item>
+        <item>kpl\\</item>
+        <item>fs</item>
+        <item>tnF</item>
+        <item>slt\\</item>
+        <item>autw</item>
+        <item>l=ge=</item>
+        <item>pl</item>
+        <item>da/</item>
+        <item>wij</item>
+        <item>jy</item>
+        <item>vvi</item>
+        <item>ms\\</item>
+        <item>g[w</item>
+        <item>bgus\\</item>
+        <item>bq=</item>
+        <item>zc</item>
+        <!-- aksara swara -->
+        <item>Ap]il\\</item>
+        <item>Ijsh</item>
+        <item>UrBn\\</item>
+        <item>EnFemi</item>
+        <item>O[kTobe/</item>
+        <!-- aksara rekan -->
+        <item>k+me/</item>
+        <item>p+ls\\</item>
+        <item>f+iki/</item>
+        <item>g+nF</item>
+        <item>j+mn\\</item>
+        <!-- aksara murda -->
+        <item>!n=</item>
+        <item>\@nJe=</item>
+        <item>#sik\\</item>
+        <item>$em/</item>
+        <item>%erau</item>
+        <item>^ai</item>
+        <item>&amp;unTu/</item>
+        <item>*tu/</item>
+        <!-- aksara wilangan (tidak ada contoh) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="exampletext">
+        <!-- aksara dasar -->
+        <item>(maha)</item>
+        <item>(nanging)</item>
+        <item>(ngaca)</item>
+        <item>(raja)</item>
+        <item>(kapal)</item>
+        <item>(dasa)</item>
+        <item>(tanda)</item>
+        <item>(salat)</item>
+        <item>(utawa)</item>
+        <item>(langgeng)</item>
+        <item>(pala)</item>
+        <item>(dhahar)</item>
+        <item>(wija)</item>
+        <item>(jaya)</item>
+        <item>(nyanyi)</item>
+        <item>(mas)</item>
+        <item>(gawe)</item>
+        <item>(bagus)</item>
+        <item>(bathang)</item>
+        <item>(ngaca)</item>
+        <!-- aksara swara -->
+        <item>(April)</item>
+        <item>(Ijasah)</item>
+        <item>(Urban)</item>
+        <item>(Endemi)</item>
+        <item>(Oktober)</item>
+        <!-- aksara rekan -->
+        <item>(khamer)</item>
+        <item>(valas)</item>
+        <item>(dzikir)</item>
+        <item>(ghanda)</item>
+        <item>(zaman)</item>
+        <!-- aksara murda -->
+        <item>(Nanang)</item>
+        <item>(Kanjeng)</item>
+        <item>(Tasik)</item>
+        <item>(Semar)</item>
+        <item>(Perahu)</item>
+        <item>(Nyai)</item>
+        <item>(Guntur)</item>
+        <item>(Batur)</item>
+        <!-- aksara wilangan (tidak ada contoh) -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array> 
+
+</resources>

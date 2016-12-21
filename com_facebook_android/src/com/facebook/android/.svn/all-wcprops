@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/136/fblibrary/src/com/facebook/android
+END
+AsyncFacebookRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/40/fblibrary/src/com/facebook/android/AsyncFacebookRunner.java
+END
+FacebookError.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/40/fblibrary/src/com/facebook/android/FacebookError.java
+END
+FbDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/136/fblibrary/src/com/facebook/android/FbDialog.java
+END
+Facebook.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/40/fblibrary/src/com/facebook/android/Facebook.java
+END
+DialogError.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/40/fblibrary/src/com/facebook/android/DialogError.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/40/fblibrary/src/com/facebook/android/Util.java
+END

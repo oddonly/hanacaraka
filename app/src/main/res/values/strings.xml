@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Lestarikan Budaya Jawa</string>
+    <string name="app_name">Hanacaraka</string>
+    <string name="app_desc">Aplikasi berbasis Android untuk belajar bagaimana membaca dan menulis Aksara Jawa.</string>
+    <string name="app_action">Saya memakai Hanacaraka</string>
+    <string name="app_dev">Hanacaraka-A02</string>
+    <string name="dev_team">Tim Pengembang:\nPandu Wicaksono\nEsteria Soplantila\nM. Ridho Fikri\nRiyan N. Hidayat</string>
+    <string name="btninfocard">daftar huruf</string>
+    <string name="btninforule">daftar aturan</string>
+    <string name="btnshare">sharing pencapaian</string>
+    <string name="btnexercise">latihan</string>
+    <string name="btnexam">evaluasi</string>
+    <string name="btnabout">tentang aplikasi</string>
+    <string name="btnexit">keluar</string>
+    <string name="btnback">kembali</string>
+    <string name="aksarajawa">Informasi Aksara:</string>
+    <string name="aksarajawarule">Informasi Aturan:</string>
+    <string name="explanationrule">Penjelasan Aturan:</string>
+    <string name="pasanganaksara">Aksara Mati:</string>
+    <string name="useexample">Contoh Penggunaan:</string>
+    <string name="soundaksaratext">Bunyikan Suara</string>
+    <string name="btnexercisereadletter">baca huruf</string>
+    <string name="btnexercisewriteletter">tulis huruf</string>
+    <string name="btnexercisereadword">baca kata</string>
+    <string name="btnexercisesayword">ucap kata</string>
+    <string name="backbutton">kembali</string>
+    <string name="exercise_readletter">Aksara apa ini?</string>
+    <string name="exercise_readword">Kata apa ini?</string>
+    <string name="exercise_sayword">Bagaimana bunyi kata ini?</string>
+    <string name="btnexercisereadletterproblem">jawab</string>
+    <string name="btnexercisesayletterproblem">rekam</string>
+    <string name="typeanswer">ketik jawaban di sini</string>
+    <string name="begin">Level 1</string>
+    <string name="intermediate">Level 2</string>
+    <string name="hard">Level 3</string>
+    <string name="chooselevel">Silakan pilih level:</string>
+    <string name="facebook">Facebook</string>
+    <string name="logout">Logout</string>
+    <string name="twitter">Twitter</string>
+    <string name="plurk">Plurk</string>
+	<string name="aksaradasar">aksara dasar</string>
+	<string name="aksaraswara">aksara swara</string>
+	<string name="aksararekan">aksara rekan</string>
+	<string name="aksaramurda">aksara murdha</string>
+	<string name="aksarawilangan">aksara wilangan</string>
+	<string name="backcardtitle">Cara tulis aksara:</string>
+	<string name="evaluationresult">SELAMAT!</string>
+	<string name="sharingtext">Bagikan ke:</string>
+</resources>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/91/trunk/src/com/ppl/hanacaraka/connector/plurk
+END
+PlurkSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/87/trunk/src/com/ppl/hanacaraka/connector/plurk/PlurkSession.java
+END
+PlurkDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/102/trunk/src/com/ppl/hanacaraka/connector/plurk/PlurkDialog.java
+END
+PlurkApp.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/127/trunk/src/com/ppl/hanacaraka/connector/plurk/PlurkApp.java
+END

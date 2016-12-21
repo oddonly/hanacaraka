@@ -1,0 +1,148 @@
+package com.ridhofkr.hanacaraka.controller;
+
+import android.app.Activity;
+
+import com.ridhofkr.hanacaraka.R;
+import com.ridhofkr.hanacaraka.model.LetterProblem;
+import com.ridhofkr.hanacaraka.model.Letters;
+import com.ridhofkr.hanacaraka.model.Rules;
+import com.ridhofkr.hanacaraka.model.WordProblem;
+
+import java.util.ArrayList;
+
+public class DataAccessObject {
+	private ArrayList<Letters> letters;
+	private ArrayList<LetterProblem> lproblems;
+	private ArrayList<WordProblem> wproblems;
+	private ArrayList<Rules> rules;
+	private Activity act;
+
+	public DataAccessObject(Activity act) {
+		this.act = act;
+		createLetters();
+		createRules();
+		createWordProblems();
+		createLetterProblems();
+	}
+
+	private void createLetters() {
+		letters = new ArrayList<Letters>();
+		String[] aksara = act.getResources().getStringArray(R.array.aksara);
+		String[] text = act.getResources().getStringArray(R.array.text);
+		String[] sampleText = act.getResources().getStringArray(
+				R.array.exampletext);
+		String[] sample = act.getResources().getStringArray(
+				R.array.exampleaksara);
+		String[] sandhangan = act.getResources().getStringArray(
+				R.array.sandhangan);
+		int[] category = act.getResources().getIntArray(R.array.category);
+		String[] textSandhangan = act.getResources().getStringArray(
+				R.array.textsandhangan);
+		for (int i = 0; i < aksara.length; i++) {
+			letters.add(new Letters(aksara[i], text[i], sandhangan[i],
+					textSandhangan[i], sample[i], sampleText[i], category[i]));
+		}
+	}
+
+	private void createRules() {
+		rules = new ArrayList<Rules>();
+		String[] names = act.getResources().getStringArray(R.array.rulename);
+		String[] letters = act.getResources()
+				.getStringArray(R.array.ruleaksara);
+		String[] examples = act.getResources().getStringArray(
+				R.array.ruleexample);
+		String[] examplesText = act.getResources().getStringArray(
+				R.array.ruleexampletext);
+		String[] explanations = act.getResources().getStringArray(
+				R.array.ruleexplanation);
+		for (int i = 0; i < names.length; i++) {
+			rules.add(new Rules(names[i], letters[i], explanations[i],
+					examplesText[i], examples[i]));
+		}
+	}
+
+	private void createWordProblems() {
+		wproblems = new ArrayList<WordProblem>();
+		String[] answer = act.getResources().getStringArray(
+				R.array.answer_wordproblem);
+		String[] letter = act.getResources().getStringArray(
+				R.array.letter_wordproblem);
+		int[] category = act.getResources().getIntArray(
+				R.array.category_wordproblem);
+		int[] level = act.getResources().getIntArray(R.array.level_wordproblem);
+		for (int i = 0; i < letter.length; i++) {
+			wproblems.add(new WordProblem(level[i], letter[i], answer[i],
+					category[i]));
+		}
+	}
+
+	private void createLetterProblems() {
+		lproblems = new ArrayList<LetterProblem>();
+		String[] answer = act.getResources().getStringArray(
+				R.array.answer_letterproblem);
+		String[] letter = act.getResources().getStringArray(
+				R.array.letter_letterproblem);
+		int[] level = act.getResources().getIntArray(
+				R.array.level_letterproblem);
+		int[] category = act.getResources().getIntArray(
+				R.array.category_letterproblem);
+		for (int i = 0; i < letter.length; i++) {
+			lproblems.add(new LetterProblem(letter[i], answer[i], level[i],
+					category[i]));
+		}
+	}
+
+	public ArrayList<Letters> loadLetters() {
+		return letters;
+	}
+
+	public ArrayList<Rules> loadRules() {
+		return rules;
+	}
+
+	public ArrayList<LetterProblem> loadLetterProblem() {
+		return lproblems;
+	}
+
+	public ArrayList<LetterProblem> loadLetterProblem(int level, int category) {
+		ArrayList<LetterProblem> lv = new ArrayList<LetterProblem>();
+		for (int i = 0; i < lproblems.size(); i++) {
+			if (lproblems.get(i).level == level
+					&& lproblems.get(i).category == category) {
+				lv.add(lproblems.get(i));
+			}
+		}
+		return lv;
+	}
+
+	public ArrayList<LetterProblem> loadLetterProblem(int category) {
+		ArrayList<LetterProblem> cat = new ArrayList<LetterProblem>();
+		for (int i = 0; i < lproblems.size(); i++) {
+			if (lproblems.get(i).category == category) {
+				cat.add(lproblems.get(i));
+			}
+		}
+		return cat;
+	}
+
+	public ArrayList<WordProblem> loadWordProblem(int level, int category) {
+		ArrayList<WordProblem> lv = new ArrayList<WordProblem>();
+		for (int i = 0; i < wproblems.size(); i++) {
+			if (wproblems.get(i).level == level
+					&& wproblems.get(i).category == category) {
+				lv.add(wproblems.get(i));
+			}
+		}
+		return lv;
+	}
+
+	public ArrayList<WordProblem> loadWordProblem(int category) {
+		ArrayList<WordProblem> cat = new ArrayList<WordProblem>();
+		for (int i = 0; i < wproblems.size(); i++) {
+			if (wproblems.get(i).category == category) {
+				cat.add(wproblems.get(i));
+			}
+		}
+		return cat;
+	}
+}

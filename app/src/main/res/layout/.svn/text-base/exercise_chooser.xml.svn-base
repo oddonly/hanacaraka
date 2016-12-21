@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnexercisereadletter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/chat"
+        android:background="@drawable/custom_button"
+        android:text="@string/btnexercisereadletter"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnexerciewriteletter"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/edit"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/btnexercisewriteletter"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnexercisereadword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/chat"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/btnexercisereadword"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/btnexercisesayword"
+        android:drawableLeft="@drawable/microphone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/btnexercisesayword"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>

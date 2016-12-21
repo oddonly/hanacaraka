@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exercise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headerexercise"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/exercisechooser"
+        layout="@layout/exercise_chooser" />
+
+    <include
+        android:id="@+id/exercisereadletter"
+        layout="@layout/exercise_readletter" />
+    
+    <include 
+        android:id="@+id/exercisewriteletter" 
+        layout="@layout/exercise_writeletter" />
+    
+    <include 
+        android:id="@+id/exercisereadword" 
+        layout="@layout/exercise_readword" />
+    
+    <include 
+        android:id="@+id/exercisesayword"
+        layout="@layout/exercise_sayword" />
+
+</LinearLayout>

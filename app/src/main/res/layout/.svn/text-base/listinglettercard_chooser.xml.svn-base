@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/aksaradasar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/aksaradasar"
+        android:drawableLeft="@drawable/dasar"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/aksaraswara"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/aksaraswara"
+        android:drawableLeft="@drawable/swara"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/aksararekan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/rekan"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/aksararekan"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/aksaramurda"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/murda"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/aksaramurda"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/aksarawilangan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/wilangan"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/aksarawilangan"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
